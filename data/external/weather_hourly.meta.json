@@ -1,0 +1,41 @@
+{
+  "source": "Open-Meteo historical forecast API",
+  "endpoint": "https://historical-forecast-api.open-meteo.com/v1/forecast",
+  "license": "CC BY 4.0",
+  "attribution": "Weather data by Open-Meteo.com (https://open-meteo.com), licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).",
+  "retrieved_utc": "2026-09-03T04:42:26.377050+00:00",
+  "start_date": "2024-12-28",
+  "end_date": "2026-08-03",
+  "variables": [
+    "temperature_2m",
+    "dew_point_2m",
+    "relative_humidity_2m",
+    "precipitation",
+    "rain",
+    "snowfall",
+    "snow_depth",
+    "weather_code",
+    "pressure_msl",
+    "surface_pressure",
+    "cloud_cover",
+    "visibility",
+    "wind_speed_10m",
+    "wind_direction_10m",
+    "wind_gusts_10m",
+    "cape"
+  ],
+  "airports": [
+    "EDDF",
+    "EDDM",
+    "EGLL",
+    "EHAM",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH",
+    "LTFM",
+    "LTAI"
+  ],
+  "rows": 154176
+}

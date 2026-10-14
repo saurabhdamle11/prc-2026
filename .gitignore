@@ -1,0 +1,43 @@
+# Challenge data — distributed by the organizers under their own terms, never commit it
+Dataset/
+
+# Cached external data — regenerate with `python scripts/fetch_external.py`.
+# The .meta.json provenance sidecars are small and worth keeping in the repo.
+data/external/*.parquet
+# OpenSky ADS-B ground points from the abandoned off-block pilot (SKILLS.md §11). Not used by
+# the model, and OpenSky data is not ours to redistribute; scripts/fetch_adsb_ground.py refetches it.
+data/external/adsb_ground/
+# data/external/osm/*.json IS committed: OpenStreetMap extracts (ODbL 1.0, see README "Data"),
+# kept because Overpass returns today's map, not the one the shipped features were built from.
+
+# Built feature tables — regenerate with `python scripts/build_features.py`.
+# The tuned hyperparameters are an INPUT to scripts/build_submission.py, not a rebuildable
+# cache (they cost a 60-trial sweep), so they and the sweep record are published.
+data/processed/*
+!data/processed/lgbm_best_params_r3.json
+!data/processed/lgbm_best_params.json
+!data/processed/lgbm_study.csv
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local backups (e.g. the pre-strip copy of analysis.ipynb) — never published
+.backups/
+
+# Model artefacts, training logs and submissions
+models/
+submissions/
+catboost_info/
+
+# macOS
+.DS_Store
+
+# Secrets — MinIO/OpenSky service-account keys for the submission bucket.
+# NEVER commit: publishing the repo under GPLv3 is a challenge requirement, and this file
+# grants write access to the team bucket. Keys live in ~/.mc/config.json for `mc`.
+credentials.json
+*credentials*.json
+.env

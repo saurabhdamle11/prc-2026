@@ -1,0 +1,28 @@
+{
+  "source": "Iowa Environmental Mesonet (IEM), Iowa State University \u2014 global ASOS/METAR archive",
+  "endpoint": "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py",
+  "license": "Public domain",
+  "license_statement": "The materials found on this website are in the public domain and may be used freely by anyone for any lawful purpose.",
+  "license_url": "https://mesonet.agron.iastate.edu/disclaimer.php",
+  "attribution": "METAR data courtesy of the Iowa Environmental Mesonet, Iowa State University.",
+  "retrieved_utc": "2026-09-27T17:24:29.634368+00:00",
+  "start_date": "2024-12-28",
+  "end_date": "2026-08-03",
+  "report_types": [
+    "METAR",
+    "SPECI"
+  ],
+  "airports": [
+    "EDDF",
+    "EDDM",
+    "EGLL",
+    "EHAM",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH",
+    "LTFM"
+  ],
+  "rows": 280366
+}

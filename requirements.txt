@@ -1,0 +1,35 @@
+# PRC Data Challenge 2026 — taxi-out time prediction (team diligent-fireplace)
+#
+# Pinned to the versions the published results were produced with, on Python 3.14.5.
+#     python -m venv .venv && source .venv/bin/activate
+#     pip install -r requirements.txt
+#
+# macOS note: lightgbm, xgboost and catboost need OpenMP. Without it they import but fail
+# with "OSError: Library not loaded: @rpath/libomp.dylib". Install it first:
+#     brew install libomp
+
+# --- core data handling -------------------------------------------------------------
+pandas==3.0.5
+numpy==2.5.2
+pyarrow==25.0.1           # parquet engine; the challenge data ships as parquet
+scipy==1.18.1
+scikit-learn==1.9.0
+
+# --- models -------------------------------------------------------------------------
+lightgbm==4.7.0           # the shipped model
+catboost==1.2.10          # cross-check only; measured worse, see SKILLS.md section 8
+xgboost==3.4.1            # evaluated, not used
+optuna==4.9.0             # hyperparameter search
+shap==0.52.0              # importance sanity-checking
+
+# --- external data --------------------------------------------------------------------
+requests==2.34.2          # Open-Meteo historical API client (scripts/fetch_external.py)
+holidays==0.103           # MIT-licensed public-holiday calendars
+
+# --- exploration / plotting -----------------------------------------------------------
+matplotlib==3.11.1
+seaborn==0.13.2
+missingno==0.5.2
+jupyterlab==4.6.3
+notebook==7.6.2
+ipykernel==7.3.0

@@ -1,0 +1,18 @@
+{
+  "learning_rate": 0.026862208235383,
+  "num_leaves": 82,
+  "min_child_samples": 46,
+  "colsample_bytree": 0.3058159143273977,
+  "subsample": 0.9888282072461199,
+  "reg_lambda": 0.06992005427085748,
+  "reg_alpha": 0.001264051496855282,
+  "max_bin": 1023,
+  "n_estimators": 3546,
+  "_rmse_full": 279.82179139958674,
+  "_rmse_trimmed": 235.61555994931743,
+  "_incumbent_rmse_full": 281.48618449657596,
+  "_incumbent_rmse_trimmed": 237.2987210779416,
+  "_n_features": 127,
+  "_trials": 60,
+  "_tuned_utc": "2026-09-20T02:21:51.046572+00:00"
+}

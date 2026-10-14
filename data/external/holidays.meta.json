@@ -1,0 +1,25 @@
+{
+  "source": "python `holidays` package (vacanza/holidays)",
+  "license": "MIT",
+  "version": "0.103",
+  "generated_utc": "2026-09-03T04:42:41.877309+00:00",
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "airports": [
+    "EDDF",
+    "EDDM",
+    "EGLL",
+    "EHAM",
+    "LEBL",
+    "LEMD",
+    "LFPG",
+    "LIRF",
+    "LSZH",
+    "LTFM",
+    "LTAI"
+  ],
+  "rows": 382
+}
